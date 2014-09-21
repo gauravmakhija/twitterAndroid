@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onCancel"
+        android:text="@string/cancel" />
+
+    <Button
+        android:id="@+id/btTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ivProfilePic"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:onClick="onTweet"
+        android:text="@string/tweetButton" />
+
+    <TextView
+        android:id="@+id/tvUserId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivProfilePic"
+        android:layout_toRightOf="@+id/ivProfilePic"
+        android:text="user-id" />
+
+    <EditText
+        android:id="@+id/etTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ivProfilePic"
+        android:layout_alignRight="@+id/btTweet"
+        android:layout_below="@+id/ivProfilePic"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="@string/tweet_hint"
+        android:inputType="textCapSentences|textAutoCorrect" />
+
+    <TextView
+        android:id="@+id/tvUsersName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvUserId"
+        android:layout_alignLeft="@+id/tvUserId"
+        android:text="usersname" />
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/ivProfilePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btCancel"
+        android:layout_below="@+id/btCancel"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>

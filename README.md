@@ -18,3 +18,5 @@ User Stories: All required and one optional
 (Required)User can enter a message and hit a button to post to twitter
 (Required)User should be taken back to home timeline with new tweet visible
 (Optional)Improve the user interface and theme the app to feel twitter branded
+
+![TwitterAndroid](twitterAndroid.gif)
